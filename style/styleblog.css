@@ -34,8 +34,6 @@ ul, li, ol {
     min-height: 76px;
     align-items: center;
     justify-content: space-between;
-    /*padding-left: 120px;
-    padding-right: 120px;*/
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
@@ -59,7 +57,7 @@ ul, li, ol {
 .header__btn {
 	border-radius: 4px;
     background-color: #E3F5F5;
-    width: 230px;
+    min-width: 230px;
     min-height: 48px;
     border: solid transparent;
     color: #03B2A5;
@@ -75,9 +73,13 @@ ul, li, ol {
 	background-color: #d0f7f7;
 }
 
+.header__nav-btn {
+display: none;
+}
+
 .btn__more {
 	display: flex;
-	width: 182px;
+	min-width: 182px;
 	min-height: 48px;
 	align-items: center;
 	justify-content: center;
@@ -155,23 +157,20 @@ a.braedcrumbs__link:hover {
 /* container*/
 
 .container {
-	max-width: 1200px;
 	margin: 0 auto;
-
+	max-width: 1200px;
 }
 
 .content {
-    /*padding-left: 120px;
-    padding-right: 120px;*/
     padding-top: 30px;
 }
 
 
 .container__title {
+	color: #333;
 	font-family: "Montserrat";
 	font-size: 48px;
 	font-weight: 700;
-	color: #333;
 	margin: 0;
 	margin-bottom: 32px;
 }
@@ -224,7 +223,7 @@ a.braedcrumbs__link:hover {
 	background-image: url("../svg/emoji-smile.svg");
 }
 
-.tegspanel__button_self {
+.tegspanel__button_self, .icon {
 	padding: 6px 8px 6px 32px;
 	background-image: url("../svg/emoji-unicorn.svg");
 }
@@ -235,7 +234,7 @@ a.braedcrumbs__link:hover {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 24px;
-	width: 1200px;
+	max-width: 1200px;
 }
 
 .article__text {
@@ -246,7 +245,7 @@ a.braedcrumbs__link:hover {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 24px;
-	width: 1200px;
+	max-width: 1200px;
 	margin-top: 23px;
 }
 
@@ -264,13 +263,13 @@ a.braedcrumbs__link:hover {
 }
 
 .product__image1 {
-	height: 260px; 
-	width: 588px;
+	max-height: 259px; 
+	max-width: 588px;
 }
 
 .product__image2 {
-	width: 384px;
-	height: 260px;
+	max-width: 384px;
+	max-height: 259px;
 }
 
 /* title product */
@@ -281,7 +280,6 @@ a.braedcrumbs__link:hover {
 	font-weight: 700;
 	line-height: 26px;
 	color: #333;
-	line-height: 26px;
 }
 
 /* eggs */
@@ -318,8 +316,6 @@ a.braedcrumbs__link:hover {
 .nr-working {
 	margin-bottom: 20px;
 }
-
-
 
 
 .author {
@@ -381,14 +377,13 @@ a.braedcrumbs__link:hover {
 }
 
 /* footer */
-
 .footer {
 	background-color: #2963A3;
 	padding-top: 40px;
 }
 
 .footer__container {
-	width: 1200px;
+	max-width: 1200px;
 	min-height: 184px;
 	margin: 0 auto;
 	position: relative;
@@ -403,9 +398,6 @@ a.braedcrumbs__link:hover {
 .footer__nav {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	min-width: 310pxx;
-
-	
 }
 
 .footer__nav_links {
@@ -431,7 +423,7 @@ a.footer__nav_links {
 .footer__subscribe {
 	display: flex;
 	flex-direction: column;
-	width: 486px;
+	min-width: 486px;
 	min-height: 170px;
 	row-gap: 8px;
 	position: relative;
@@ -443,7 +435,7 @@ a.footer__nav_links {
 	font-weight: 700;
 	color: #fff;
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-/*	line-height: 26px;*/
+	line-height: 26px;
 
 }
 
@@ -461,8 +453,8 @@ a.footer__nav_links {
 }
 
 .footer__subscribe_input {
-	width: 348px;
-	height: 48px;
+	min-width: 348px;
+	min-height: 48px;
 	border-radius: 4px;
 	border: 1px solid rgba(157, 157, 157, 0.20);
 	background-color: #fff;
@@ -471,17 +463,21 @@ a.footer__nav_links {
 	font-weight: 400;
 	padding: 14px 52px 14px 16px;
 	outline: none;
-/*	position: absolute;*/
-	
+	position: relative;
 }
 
 .footer__subscribe_btn {
+	background-repeat: no-repeat;
 	border: none;
 	background-color: transparent;
 	cursor: pointer;
 	margin: 0;
-	padding: 0;
-	position: relative;
+	padding: 14px 20px;
+	border-radius: 4px;
+	background: #16C8BB;
+	position: absolute;
+	right: 105px;
+	max-height: 48px;
 }
 
 
@@ -492,21 +488,21 @@ a.footer__nav_links {
 }
 
 .socials__logo {
-	width: 221px;
-	height: 50px;
+	min-width: 221px;
+	min-height: 50px;
 	background-image: url("../svg/sk.svg");
 }
 
 .socials__network {
     display: flex;
     gap: 16px;
-	width: 176px;
-	height: 32px;
+	min-width: 176px;
+	min-height: 32px;
 }
 
 .network {
-	width: 32px;
-	height: 32px;
+	min-width: 32px;
+	min-height: 32px;
 }
 
 .network_vk {
@@ -542,7 +538,3 @@ a.footer__nav_links {
 	opacity: 0.7;
 	color: #FFFFFF;
 }
-
-
-
-
