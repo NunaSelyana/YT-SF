@@ -80,6 +80,10 @@ main {
 	background-color: #d0f7f7;
 }
 
+.header__nav-btn {
+display: none;
+}
+
 .btn__more {
 	display: flex;
 	width: 182px;
@@ -194,6 +198,11 @@ a.braedcrumbs__link:hover {
 	margin: 16px 0 24px 0;
 
 }
+
+.article__author_mob {
+	display: none;
+}
+
 
 .author:after {
 	content: "·";
@@ -311,12 +320,11 @@ a.braedcrumbs__link:hover {
 }
 
 .Vbn {
-	margin-bottom: 16px;
+	margin: 16px 0 16px 0;
 }
 
 .Trw {
 	margin-top: 8px;
-	margin-bottom: 16px;
 }
 
 .wrap__author {
@@ -373,11 +381,15 @@ a.braedcrumbs__link:hover {
 .article__wrap2 {
 	display: flex;
 	flex-direction: column;
-	column-gap: 8px;
+	row-gap: 8px;
 	border-radius: 16px;
 	background: #FEFAEC;
 	padding: 24px;
 	margin-bottom: 24px;
+}
+
+.lasex {
+	background: rgba(3, 178, 165, 0.10);;
 }
 
 .exercise {
@@ -448,9 +460,7 @@ a.braedcrumbs__link:hover {
 .info__image {
 	display: flex;
 	flex-direction: column;
-	padding-top: 24px;
-	padding-left: 12.5px;
-	padding-right: 12.5px;
+	padding: 24px 12.5px 0 12.5px;
 }
 
 .info__text {
@@ -498,6 +508,18 @@ a.braedcrumbs__link:hover {
 }
 
 /* info card face */
+
+.info__card_face {
+	border-radius: 16px;
+	border: 1px solid #DEDEDE;
+	background: #fff;
+	max-width: 282px;
+	min-height: auto;
+	position: relative;
+	margin-bottom: 28px;
+
+
+}
 
 .face {
 	position: relative;
@@ -548,6 +570,10 @@ a.braedcrumbs__link:hover {
 
 }
 
+.info__card_container {
+	padding: 0 16px 36px 16px;
+}
+
 .title4_face {
 	font-size: 20px;
 	font-weight: 700;
@@ -562,6 +588,7 @@ a.braedcrumbs__link:hover {
 	line-height: 24px;
 	text-align: center;
 	color: #333;
+	margin-bottom: 4px;
 }
 
 .expe {
@@ -585,40 +612,31 @@ a.braedcrumbs__link:hover {
 	background: #FFF;
 	box-shadow: 0px 1px 0px 0px #DEDEDE;
 	border: none;
+	margin: 16px 0 16px 0;
 }
 
-.info__card_face {
-	border-radius: 16px;
-	border: 1px solid #DEDEDE;
-	background: #fff;
-	max-width: 282px;
-	min-height: auto;
-	position: relative;
-	margin-bottom: 28px;
 
-
-}
 
 .pp_face {
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 24px;
 	color: #333;
-	margin: 16px 0 8px 16px;
+	margin-bottom: 8px;
 }
 
 .Con__text {
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 20px;
+	margin-bottom: 8px;
 
 }
 
 
-
 .Con__list {
 	position: relative;
-	padding-left: 40px;
+	padding-left: 24px;
 
 }
 
@@ -626,7 +644,7 @@ a.braedcrumbs__link:hover {
 	content: url("../svg/liststyle.svg");
 	position: absolute;
 	top: 0;
-	left: 13px;
+	left: 0;
 }
 
 .face__btn{
@@ -642,7 +660,7 @@ a.braedcrumbs__link:hover {
     font-size: 16px;
     font-weight: 700;
     color: #fff;
-    margin: 16px 16px 36px 16px;
+    margin: 12px 0 0 0;
     cursor: pointer;
     transition: background .1s linear, color .1s linear;
 }
@@ -684,6 +702,7 @@ a.braedcrumbs__link:hover {
 	background-color: #FFF;
 	border: 1px solid #DEDEDE;
 	background-image: url(../svg/box.svg);
+	background-repeat: no-repeat;
 	background-position: bottom right;
 
 
@@ -850,7 +869,7 @@ a.braedcrumbs__link:hover {
 .footer__nav_links {
     display: flex;
     flex-direction: column;
-    row-gap: 14px;
+    row-gap: 16px;
 	color: #fff;
 	font-size: 16px;
 	font-weight: 700;
@@ -864,14 +883,16 @@ a.braedcrumbs__link:hover {
 a.footer__nav_links {
 	margin-right: 93px;
 	text-wrap: nowrap;
+	line-height: 24px;
 
 }
 
 .footer__subscribe {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	min-width: 486px;
-	min-height: 170px;
+	max-height: 170px;
 	row-gap: 8px;
 	position: relative;
 	margin-right: 93px;
@@ -892,6 +913,7 @@ a.footer__nav_links {
 	color: #fff;
 	letter-spacing: 0.25px;
 	opacity: 0.7;
+	line-height: 18px;
 }
 
 .footer__subscribe_form {
@@ -938,13 +960,14 @@ a.footer__nav_links {
 	min-width: 221px;
 	min-height: 50px;
 	background-image: url("../svg/sk.svg");
+	background-repeat: no-repeat;
 }
 
 .socials__network {
     display: flex;
     gap: 16px;
-	min-width: 176px;
-	min-height: 32px;
+	/*min-width: 176px;
+	min-height: 32px;*/
 }
 
 .network {
