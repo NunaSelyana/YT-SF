@@ -252,10 +252,10 @@ a.braedcrumbs__link:hover {
 /* product */
 
 .product {
-	border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+	border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
 	border: solid 1px #DEDEDE;
 	overflow: hidden;
 	position: relative;
@@ -272,14 +272,12 @@ a.braedcrumbs__link:hover {
 	max-height: 259px;
 }
 
-.mob768 {
+.mob768, .mob96, .mob960, .mob414,
+.mob320 {
 	display: none;
 }
 
-.mob960 {
-	display: none;
-}
-
+ 
 /* title product */
 
 .title__product {
@@ -378,9 +376,8 @@ a.braedcrumbs__link:hover {
 }
 
 .icon {
-	padding: 6px 8px 6px 32px;
 	background-image: url("../svg/emoji-unicorn.svg");
-	
+	padding: 6px 8px 6px 32px;	
 }
 
 /* footer */
@@ -391,10 +388,11 @@ a.braedcrumbs__link:hover {
 }
 
 .footer__container {
+	margin: 0 auto;
 	max-width: 1200px;
 	min-height: 184px;
-	margin: 0 auto;
 	position: relative;
+	
 }
 
 .footer__inner {

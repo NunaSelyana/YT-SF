@@ -199,7 +199,9 @@ a.braedcrumbs__link:hover {
 
 }
 
-.article__author_mob {
+.article__author_mob,
+.mob414, .img960, .mob320,
+.imob414 {
 	display: none;
 }
 
@@ -349,7 +351,6 @@ a.braedcrumbs__link:hover {
 
 .discon {
 	display: flex;
-	max-width: 690px;
 	margin: 24px 0 24px 0;
 	position: relative;
 	background-image: url("../svg/Vector.svg");
@@ -358,7 +359,6 @@ a.braedcrumbs__link:hover {
 }
 
 .discon__par {
-	max-width: 485px;
 	margin: 24px 104px 48px 102px;
 }
 
@@ -401,10 +401,17 @@ a.braedcrumbs__link:hover {
 .article__row-2 {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(2, auto);
+	gap: 24px;
+	
+}
+
+.article__row-2-flex {
+	display: flex;
+	flex-direction: column;
 	gap: 24px;
 	margin-bottom: 24px;
 }
+
 
 .Mt {
 	margin-top: 24px;
@@ -711,7 +718,7 @@ a.braedcrumbs__link:hover {
 .sess_con {
 	display: flex;
 	flex-direction: column;
-    margin: 32px;
+    padding: 32px;
     gap: 16px;
 
 }
